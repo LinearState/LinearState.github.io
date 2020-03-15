@@ -1,0 +1,39 @@
+# [Photon ML Tutorial](https://github.com/linkedin/photon-ml/wiki/Photon-ML-Tutorial)
+*Alex Shelkovnykov edited this page on 1 Nov 2017 - 12 revisions*
+
+*Hyungju Seon translated this page on 13 Mar 2020*
+
+___
+
+>포톤 ML 튜토리얼은 주피터 노트북이며, 웹앱은 개인 추천시스템에서의 GLMix(generalized linear mixed models)의 사용법을 설명하기 위해 만들어졌습니다.
+>
+>이 튜토리얼은 KDD2016에서 발표되었으며, 링크드인의 추천시스템 개관과 Photon의 게임 모듈에서의 GLMix 구현 방법을 소개하는 슬라이드를 담고 있습니다.
+
+---
+
+## 1. 설치
+
+이 튜토리얼은 도커(Docker)에서 실행됩니다. 따라서 Docker 혹은 Docker Toolbox를 설치해야 합니다. Docker를 설치하시려면, https://docker.com/engine/installation/ 을 방문하시고 안내에 따라 설치를 진행해 주세요.([윈도우 10 도커 다운로드 링크](https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)) Docker의 설치가 완료되면 데몬(deamon)을 실행해 주세요(운영체제에 따라 자동으로 실행될 수 있습니다.)
+
+
+ 다음 단계는 Photon ML Tutoriaal Docker image를 설치하는 것입니다. 터미널(cmd)에서 
+`docker pull linkedin/photon-ml-tutorial`를 입력하세요. 튜토리얼 이미지를 위한 컨테이너를 런치하기 위해`docker run -dit -p 5534:80 --name photon-ml-tutorial linkedin/photon-ml-tutorial`를 입력하세요. `docker ps`를 통해 컨테이너가 정상적으로 실행되는지 알 수 있습니다.
+
+
+Photon ML Tutorial에 접속하기 위해 http://localhost:5334/tutorial 로 이동하세요. 만약 Docker Toolbox를 사용중이고 위 URL이 제대로 로드되지 않는다면 `docker -machine ls`를 통해 튜토리얼 앱에 접속 가능한 ip를 확보하고, `http://<ip>:5334/tutorial`로 이동하세요. 튜토리얼은 주피터 노트북 내에서 이를 실행하기 위한 상세한 설명을 제공합니다.
+
+::: warning
+역주 : http://localhost:5334/tutorial 가 실행되지 않을 경우, http://localhost:5534/tutorial 로 접근
+:::
+
+---
+
+## 2.삭제
+
+`docker stop photon-ml-tutorial` 명령어로 튜토리얼 컨테이너를 닫습니다. 그리고 `docker rm photon-ml-tutorial`을 통해 튜토리얼 컨테이너를 제거합니다. 튜토리얼 이미지는 `docker rmi linkedin/photon-ml-tutorial`을 통해 제거할 수 있습니다.
+
+---
+
+## 3.비디오
+
+이 [링크](http://videolectures.net/kdd2016_tutorial_recommender_systems/)를 통해 KDD2016에서 발표된 이 튜토리얼의 옛날 버전을 볼 수 있습니다.
