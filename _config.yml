@@ -14,8 +14,8 @@ sass:
 plainwhite:
   name: Hyung Ju Seon
   tagline: |
-  Data Scientist
-  Graduate student
+    Data Scientist
+    Graduate student
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
