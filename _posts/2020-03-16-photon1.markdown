@@ -29,7 +29,7 @@ ___
 
 Photon ML Tutorial에 접속하기 위해 http://localhost:5334/tutorial 로 이동하세요. 만약 Docker Toolbox를 사용중이고 위 URL이 제대로 로드되지 않는다면 `docker -machine ls`를 통해 튜토리얼 앱에 접속 가능한 ip를 확보하고, `http://<ip>:5334/tutorial`로 이동하세요. 튜토리얼은 주피터 노트북 내에서 이를 실행하기 위한 상세한 설명을 제공합니다.
 
-** *역주 : http://localhost:5334/tutorial 가 실행되지 않을 경우, http://localhost:5534/tutorial 로 접근* **
+**역주 : http://localhost:5334/tutorial 가 실행되지 않을 경우, http://localhost:5534/tutorial 로 접근**
 
 ---
 
